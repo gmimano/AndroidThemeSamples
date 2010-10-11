@@ -1,0 +1,59 @@
+README
+------
+
+Welcome to the Android Theme Samples project. 
+
+This project aims to be a collection of different themes and styles contributed by other android designers and developers.
+Hopefully you will like them and include them in your own apps to make them more beautiful.
+
+You are more than encouraged to share your own themes with this project. If you plan to do so please have a look at the CONTRIBUTING section.
+
+
+PROJECT STRUCTURE
+-----------------
+
+This project is written in the form of an app, in a similar manner to the Android Samples application: 
+Each sample is implemented as an activity, each demoing his own theme. A theme can consist of XML resources, graphics or both (for example buttons or animations might contain XML+PNGs).
+The main screen contains a list which links to each sample/activity. 
+Additionally, activities are split into sections. This will allow for a better organization. 
+Sample sections could be: "light themes", "black themes", "buttons", "animations", etc.
+
+This modular approach will hopefully ease contributions and scale well.
+
+
+CONTRIBUTING
+------------
+
+So you thought about contributing some samples? That's great!
+This is what you should know before contributing:
+	
+* How this project is structured (see PROJECT STRUCTURE section)
+  You should place each activity in its own section (Keep in mind each section corresponds to a package)
+
+* Since all the resources from different themes are placed together in the same folders (drawable, layout, etc.), each theme should prefix their own files with the theme name, followed by an underscore.
+
+* Submitting patches or pull requests are preferred, but you could also send a standalone application which demoes the theme, and I will include it among the existing samples.
+
+* Your submissions will be greatly appreciated! =D
+
+For instance, if you were to contribute a theme (named asdf) which consists of a styles.xml, button.9.png and an activity showing how the theme looks like, you should rename the files to: 
+	asdf_styles.xml, asdf_button.9.png, Asdf.java
+
+At this point all that should be left is to include a reference to Asdf.class in the corresponding List Activity.
+
+
+TODO
+----
+
+* Create more themes, at least one per section so they can serve as a reference point.
+* Add more and better themes
+* Get more people to add themes
+* Create a simple voting mechanism for themes (for example backed by a appengine-powered web backend)
+* Convert all hdpi gfx to mdpi and ldpi, this app will crash on non-hdpi devices (I'm lazy)
+
+
+LICENSE
+-------
+
+This project is Apache Licensed.
+
