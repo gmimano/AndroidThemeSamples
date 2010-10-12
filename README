@@ -49,7 +49,6 @@ TODO
 * Add more and better themes
 * Get more people to add themes
 * Create a simple voting mechanism for themes (for example backed by a appengine-powered web backend)
-* Convert all hdpi gfx to mdpi and ldpi, this app will crash on non-hdpi devices (I'm lazy)
 
 
 LICENSE
