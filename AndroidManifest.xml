@@ -16,6 +16,8 @@
         <activity android:name=".light.Light1" android:label="Light 1" />
 
     </application>
-
-
+    
+	<supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
+	<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="4"/>
+	
 </manifest> 
