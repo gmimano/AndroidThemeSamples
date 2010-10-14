@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@android:color/background_light">
+  <LinearLayout style="@style/Actionbar_TitleBar">
+	<ImageButton style="@style/Actionbar_TitleBarAction"
+	    android:contentDescription="Home"
+	    android:src="@drawable/actionbar_ic_title_home" />
+	
+	<ImageView style="@style/Actionbar_TitleBarSeparator" />
+	<TextView style="@style/Actionbar_TitleBarText"
+		android:text="Test Action Bar" />
+	
+	<ImageView style="@style/Actionbar_TitleBarSeparator" />
+	<ImageButton style="@style/Actionbar_TitleBarAction"
+	    android:contentDescription="press to search"
+	    android:src="@drawable/actionbar_ic_title_search" />
+  </LinearLayout>
+</LinearLayout>

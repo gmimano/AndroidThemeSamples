@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  style="@style/Dark1" >
+<LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_horizontal"
+  	android:layout_margin="10dp"
+  	android:text="This Is Some Test Text" />
+  <Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_horizontal"
+  	android:layout_margin="10dp"
+  	android:text="This Is Some Test Text" />
+  <Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_horizontal"
+  	android:layout_margin="10dp"
+  	android:text="This Is Some Test Text" />
+  <Button 
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_horizontal"
+  	android:layout_margin="10dp"
+  	android:text="This Is Some Test Text" />
+  <RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="5dp"
+	android:paddingTop="5dp"
+	android:background="@drawable/light1_box"
+  	android:clickable="true"
+  	android:focusable="true" >
+	<FrameLayout
+		android:id="@+id/frame"
+		android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:layout_marginRight="4dp"
+	  	android:layout_centerVertical="true"
+	  	android:duplicateParentState="true"
+	  	android:foreground="@drawable/light1_frame" >
+	  	<ImageView
+		  	android:id="@+id/avatar"
+		  	android:src="@drawable/light1_avatar"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:layout_gravity="center"
+		  	android:adjustViewBounds="true" />
+  	</FrameLayout>
+	<TextView 
+	  	android:id="@+id/row_title"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"	  	
+	  	android:layout_toRightOf="@id/frame"
+		android:layout_alignParentTop="@id/avatar"
+		android:paddingTop="2dp"
+	  	android:singleLine="true"
+	  	android:ellipsize="marquee"
+	  	android:text="Row with Frame Avatar" />
+	<TextView 
+		android:id="@+id/last_date"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="10dp"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:singleLine="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/row_title"
+		android:text="2. Apr" />	  	
+	<TextView
+	  	android:id="@+id/row_text"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"	 
+	  	android:layout_below="@id/row_title"
+	  	android:layout_toRightOf="@id/frame"
+	  	android:layout_toLeftOf="@id/last_date"
+	  	android:ellipsize="end"
+	  	android:singleLine="true"
+	  	android:text="This is a loooooooooooooooooooooooooooooooooooooooooooooooooong" />
+  </RelativeLayout>
+  <TextView 
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="Default Text " />
+</LinearLayout>
+</ScrollView>

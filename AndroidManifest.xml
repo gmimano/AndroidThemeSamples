@@ -14,6 +14,10 @@
         
         <activity android:name=".light.LightThemes" android:label="Light Themes" />
         <activity android:name=".light.Light1" android:label="Light 1" />
+        <activity android:name=".dark.DarkThemes" android:label="Dark Themes" />
+        <activity android:name=".dark.Dark1" android:label="Dark 1" android:theme="@style/Dark1" />
+        <activity android:name=".patterns.Patterns" android:label="UI Patterns" />
+        <activity android:name=".patterns.Actionbar" android:label="Action Bar" android:theme="@style/Actionbar" />
 
     </application>
     

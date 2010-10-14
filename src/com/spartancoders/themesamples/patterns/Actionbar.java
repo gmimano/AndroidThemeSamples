@@ -1,17 +1,14 @@
-package com.spartancoders.themesamples.light;
+package com.spartancoders.themesamples.patterns;
 
 import android.app.Activity;
 import android.os.Bundle;
+
 import com.spartancoders.themesamples.R;
 
-/*
- * @author @luxorules
- * @author @pablollopis
- */
-public class Light1 extends Activity {
+public class Actionbar extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.light1);
+		setContentView(R.layout.actionbar);
 	}
 }

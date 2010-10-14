@@ -11,8 +11,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.spartancoders.themesamples.light.LightThemes;
+import com.spartancoders.themesamples.patterns.Patterns;
 
 public class Main extends ListActivity {
 	private static final Map<String, Class> mSections;
@@ -21,6 +23,7 @@ public class Main extends ListActivity {
 		map.put("Buttons", null);
 		map.put("Dark Themes", null);
 		map.put("Light Themes", LightThemes.class);
+		map.put("UI Patterns", Patterns.class);
 		mSections = Collections.unmodifiableMap(map);
 	}
 	
@@ -42,6 +45,6 @@ public class Main extends ListActivity {
     	if (c != null) {
         	Intent intent = new Intent(this, c);
         	startActivity(intent);    		
-    	}
+    	} else Toast.makeText(this, "Nothing there yet..", Toast.LENGTH_SHORT).show();
     }
 }
